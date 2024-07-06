@@ -1,0 +1,289 @@
+html,body,*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #B9B0B2;
+  --second: #3A5154;
+}
+body {
+  background: var(--primary);
+}
+nav {
+  background: var(--second);
+  display: flex;
+  justify-content: space-around;
+}
+nav button {
+  width: 10%;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--primary);
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+nav button:first-child {
+  pointer-events: none;
+  background: rgba(185,176,162,.2);
+}
+#newMission {
+  background: rgba(255,255,255,.5);
+  color: var(--second);
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px 5px var(--second);
+  width: 40%;
+  margin: auto ;
+  padding: 2%;
+  right: 30%;
+  top: 20%;
+  text-align: center;
+  line-height: 25px;
+  z-index: 30;
+}
+#newMission span {
+  margin-left: 90%;
+}
+#newMission h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#newMission h3 {
+  margin-right: 80px;
+}
+#newMission h4 {
+  margin-right: 150px;
+}
+#newMission input {
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 250px;
+}
+#newMission textarea {
+  resize: none;
+  border: 0;
+  background: none;
+  outline: 0;
+  height: 80px;
+  width: 250px;
+}
+#newMission hr {
+  width: 60%;
+  height: 5px;
+  background: var(--second);
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+#newMission button {
+  background: var(--second);
+  border-radius: 10px;
+  color: var(--primary);
+  display: block;
+  font-size: 1.2rem;
+  margin-left: 90%;
+  width: 40px;
+  height: 40px;
+}
+main {
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px 5px var(--second);
+  color: var(--second);
+  width: 50%;
+  margin: 10% auto 0;
+  padding: 2%;
+  position: relative;
+}
+main #filter input {
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 250px;
+}
+main #filter hr{
+  width: 250px;
+  height: 5px;
+  background: var(--second);
+}
+main h2 {
+  margin-bottom: 15px;
+}
+.mission {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--second);
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.canc {
+  color: var(--primary);
+  position: relative;
+  margin-left: 90%;
+  bottom: 30px;
+  z-index: 2;
+}
+#missionDet {
+  background: rgba(255,255,255,.5);
+  color: var(--second);
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px 5px var(--second);
+  width: 40%;
+  margin: auto ;
+  padding: 2%;
+  right: 30%;
+  top: 20%;
+  text-align: center;
+  line-height: 25px;
+  z-index: 4;
+}
+#missionDet > span {
+  margin-left: 90%;
+}
+#missionDet h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#missionDet button {
+  background: var(--second);
+  border-radius: 10px;
+  color: var(--primary);
+  display: block;
+  font-size: 1.2rem;
+  margin-left: 90%;
+  width: 40px;
+  height: 40px;
+}
+.bg {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+#missionND {
+  margin: 15px 0;
+}
+@media (max-width: 800px){
+  nav button {
+    width: 20%;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+  #missionDet {
+    width: 60%;
+    right: 20%;
+    top: 20%;
+    line-height: 15px
+  }
+  #newMission {
+    width: 60%;
+    right: 20%;
+    line-height: 15px;
+  }
+  #newMission h2 {
+    margin-bottom: 25px;
+  }
+  #newMission h3 {
+    margin-right: 80px;
+  }
+  #newMission h4 {
+    margin-right: 150px;
+  }
+  #newMission input {
+    width: 250px;
+  }
+  #newMission hr {
+    width: 70%;
+    height: 5px;
+    background: var(--second);
+    margin-left: 15%;
+    margin-bottom: ;
+  }
+  #newMission button {
+    background: var(--second);
+    border-radius: 10px;
+    color: var(--primary);
+    display: block;
+    font-size: 1.2rem;
+    margin-left: 90%;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 400px){
+  nav button {
+    width: 30%;
+    height: 30px;
+    font-size: 1rem;
+    margin: 15px 0;
+    padding: 5px 0;
+  }
+  main {
+    width: 80%;
+    padding: 5%;
+  }
+  main #filter input {
+    width: 80%;
+  }
+  main #filter hr{
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  #newMission {
+    width: 90%;
+    margin: auto ;
+    padding: 2%;
+    right: 5%;
+    top: 10%;
+    line-height: 15px
+  }
+  #newMission span {
+    margin-left: 85%;
+  }
+  #newMission h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #newMission h3 {
+    margin-right: 80px;
+  }
+  #newMission h4 {
+    margin-right: 150px;
+  }
+  #newMission input {
+    width: 80%;
+  }
+  #newMission textarea {
+    width: 80%;
+  }
+  #newMission hr {
+    margin-left: 5%;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  #newMission button {
+    font-size: 1.1rem;
+    margin-left: 85%;
+  }
+  #missionDet {
+    width: 80%;
+    right: 10%;
+  }
+  #missionDet > span {
+    margin-left: 80%;
+  }
+  #missionDet button {
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 85%;
+    width: 20px;
+    height: 20px;
+  }
+}

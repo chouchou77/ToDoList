@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>toDoList</title>
+</head>
+<body>
+	<nav>
+	  <button id="ca">clear All</button>
+	  <button id="newM">new mission</button>
+	</nav>
+	<div class="bg a">
+    <div id="newMission">
+      <span id="cancel1">X</span>
+      <h2>New Mission</h2>
+      <h3>name of mission:</h3>
+      <input id="name" type="text" value="">
+      <hr>
+      <h4>description:</h4>
+      <textarea id="description"></textarea>
+      <hr>
+      <button type="button" id="ok1">OK</button>
+    </div>
+  </div>
+	<main>
+	  <div id="filter">
+	    <h2>filter missions:</h2>
+	    <input id="search" type="search">
+	    <hr/>
+	  </div>
+	  <h2>MISSIONS:</h2>
+	  <div id="missions">
+	    <span id="noM">NO MISSION</span>
+	  </div>
+	</main>
+	<div class="bg b">
+	  <div id="missionDet">
+	    <span id="cancel2">X</span>
+	    <div id="missionND">
+	      
+	    </div>
+	    <button id="ok2">OK</button>
+	  </div>
+	</div>
+  <script src="js/index.js"></script>
+</body>
+</html>
